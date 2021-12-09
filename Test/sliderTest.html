@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: cadetblue;
+        display: flex;
+        margin: 5px 5px;
+        padding: 5px 10px;
+        justify-content: center;
+        /* overflow: hidden; */
+      }
+      p {
+        position: absolute;
+        height: 40px;
+        margin: 5px 5px;
+        opacity: 0;
+      }
+      button {
+        margin: 5px 55px;
+      }
+      p.activeSlide {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      p.lastSlide {
+        transform: translateX(-100%);
+      }
+      p.nextSlide {
+        transform: translateX(100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>para1sdfsdfdsfsdfsdfsdfsdfdsfsdfsdfdssdfsdfsdsdfsdf</p>
+      <button><</button>
+      <p>para2sdfdsfsdfsdfsdfsdfdssdfdsfsdfsdsdf</p>
+      <button>></button>
+      <p>para3dsfsdfdsfsdfsdfsdfdsfdsfsdfsdfsdfsdfdsfsdfdsfsdfsdf</p>
+    </div>
+  </body>
+</html>
